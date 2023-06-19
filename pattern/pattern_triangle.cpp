@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	
 	int limit;
-	cout << "Enter any number row and columns = ";
+	cout << "Enter the number to print = ";
 	cin >> limit;
 	
 	while(limit >= 0)
@@ -23,7 +23,7 @@ int main(){
 }
 
 //  Output of Pattern
-//	Enter any number row and columns = 5
+//	Enter the number to print = 5
 //	012345
 //	01234
 //	0123
