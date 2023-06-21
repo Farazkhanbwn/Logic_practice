@@ -2,31 +2,27 @@
 using namespace std;
 
 int main() {
-    int userInput , limit;
+    int rows ;
     
-    cout << "Enter Number of Row & Columns = ";
-    cin >> userInput;
+    cout << "Enter Number of Rows = ";
+    cin >> rows;
     
-    limit = userInput + 65;
-    
-    while(limit > 65){
+    while(rows >= 0){
         
-        int asciValue = 65;
-        
-        while(limit > asciValue){
-        	
-            char character = char(asciValue);
+        int columnCounter = 0;
+        while(rows > columnCounter){
+            char character = char(65 + columnCounter);
             cout << character;
-            asciValue++;
+            columnCounter++;
         }
         
-        limit--;
+        rows--;
         cout <<endl;
     }
 }
 
 // 	Output
-//	Enter Number of Row & Columns = 5
+//	Enter Number of Rows = 5
 //	ABCDE
 //	ABCD
 //	ABC
