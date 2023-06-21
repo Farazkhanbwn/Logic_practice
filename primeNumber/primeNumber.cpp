@@ -5,8 +5,16 @@ int main() {
 	
     int number = 2;
 
-    while(number <= 100){
-
+    while(number <= 500){
+    	
+    	if (number < 8){
+    		goto startPrime;
+		}
+		else{
+			goto nextprime;
+		}
+		
+	startPrime:
         if(number < 4)
 		{
         	cout << number << "\t";
@@ -20,7 +28,8 @@ int main() {
 			}
 		}
 		
-		else if(number % 2 != 0 && number % 3 != 0 && number % 5 != 0 && number % 7 != 0)
+	nextprime:
+		if(number % 2 != 0 && number % 3 != 0 && number % 5 != 0 && number % 7 != 0)
 		{
 			cout << number << "\t";
 		}
