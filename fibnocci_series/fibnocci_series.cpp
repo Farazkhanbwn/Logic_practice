@@ -1,25 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-	
-	int userInput , sum=0;
-	int var1 =0, var2 =1, result = 0;
-	cout << "Enter a number";
-	cin >> userInput;
-	
-	for(int i=1; i<=userInput ; i++){
-		
-		cout << var1 <<"\t" ;
-		sum = sum + var1;
-		result = var1 + var2;
-		var1 = var2;
-		var2 = result;
-		
-	}
-	
-	cout <<endl<< "sum is = "<<sum;
+int main() {
+    int userInput, sum = 0;
+    int currentNumber = 0, nextNumber = 1, temp = 0;
+    
+    cout << "Enter a number: ";
+    cin >> userInput;
+
+    for (int i = 1; i <= userInput; i++) {
+        cout << currentNumber << "\t";
+        
+        sum += currentNumber;
+        temp = currentNumber + nextNumber;
+        currentNumber = nextNumber;
+        nextNumber = temp;
+    }
+
+    cout << endl << "Sum is = " << sum;
+    return 0;
 }
+
 
 // Output
 //Enter a number5
