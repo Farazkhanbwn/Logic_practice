@@ -20,6 +20,6 @@ int fact(int num) {
     return 1;
 }
 
-// Output
+// Output:
 // Enter a number to Find Factorial: 5
 // Factorial is =  120
